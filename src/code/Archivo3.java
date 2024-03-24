@@ -1,6 +1,11 @@
 package code;
 
 public class Archivo3 {
+
+  public static void main(String[] args) {
+        generateUUID();
+        otherGenerateUUID();
+    }
   private static void generateUUID() {
         UUID uuid = UUID.randomUUID();
         System.out.println("UUID generado: " + uuid);
