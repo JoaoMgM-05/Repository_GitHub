@@ -23,7 +23,7 @@ public class Archivo1 {
 
         return answer;
 
-    }
+  }
 
   public static void numeroAleatorio() {
         System.out.println("Aquí vamos a generar números aleatorios. Para ello necesito que me brindes la cantidad de número que quieres que genere");
@@ -45,6 +45,26 @@ public class Archivo1 {
 
 
         }
-    }
+  }
+
+  public static void calcFactorial() {
+
+        System.out.println("Aquí vamos a calcular el factorial de un número");
+
+        System.out.println();
+
+        int numero, factorial = 1;
+
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número"));
+
+        for (int i = 1; i <= numero; i++) { //ArithmeticException i=0
+
+            factorial *= i; //ArithmeticException division by zero
+
+        }
+
+        System.out.println();
+        System.out.println("El factorial de " + numero + " es: " + factorial);
+  }
   
 }
