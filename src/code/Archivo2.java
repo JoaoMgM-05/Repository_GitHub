@@ -19,5 +19,20 @@ public class Archivo2 {
         return opcion;
 
     }
-  
+  private static void ejecutarOpcion(int opcion) {
+        switch (opcion) {
+            case 1:
+                Archivo2.obtenerPotencia(opcion);
+                break;
+            case 2:
+                Archivo2.numeroAleatorio();
+                break;
+            case 3:
+                Archivo2.calcFactorial();
+                break;
+            case 4:
+                System.out.println("PROGRAMA FINALIZADO");
+                break;
+        }
+    }
 }
