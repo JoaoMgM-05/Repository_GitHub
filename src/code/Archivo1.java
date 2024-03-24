@@ -24,4 +24,27 @@ public class Archivo1 {
         return answer;
 
     }
+
+  public static void numeroAleatorio() {
+        System.out.println("Aquí vamos a generar números aleatorios. Para ello necesito que me brindes la cantidad de número que quieres que genere");
+
+        int longitud=Integer.parseInt(JOptionPane.showInputDialog("Introduce un número"));
+
+        int num_aleatorio[]=new int[longitud];
+
+        //EXCEPTION: ArrayIndexOutOfBoundsException
+        for( int i = 0; i<num_aleatorio.length; i++) {
+
+            num_aleatorio[i]=(int)(Math.random()*100);
+
+        }
+
+        for(int cantidad: num_aleatorio) {
+
+            System.out.println( cantidad);
+
+
+        }
+    }
+  
 }
