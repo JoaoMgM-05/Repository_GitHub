@@ -2,6 +2,20 @@ package code;
 import javax.swing.JOptionPane;
 public class Archivo2 {
 
+  public static void main(String[] args) {
+
+        int opcion;
+
+        do {
+
+            opcion = leerOpcion();
+
+            ejecutarOpcion(opcion);
+
+        } while (opcion != 4); //IOException
+
+        System.out.println("Gracias por usar el programa");
+    }
   private static int leerOpcion() {
         int opcion;
 
@@ -35,4 +49,5 @@ public class Archivo2 {
                 break;
         }
     }
+  
 }
