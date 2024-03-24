@@ -1,6 +1,7 @@
 package code;
 import javax.swing.JOptionPane;
 public class Archivo2 {
+  
   private static int leerOpcion() {
         int opcion;
 
@@ -17,5 +18,23 @@ public class Archivo2 {
 
         return opcion;
 
-    }
+  }
+  
+  private static void ejecutarOpcion(int opcion) {
+        switch (opcion) {
+            case 1:
+                Archivo1.obtenerPotencia(opcion);
+                break;
+            case 2:
+                Archivo1.numeroAleatorio();
+                break;
+            case 3:
+                Archivo1.calcFactorial();
+                break;
+            case 4:
+                System.out.println("PROGRAMA FINALIZADO");
+                break;
+        }
+  }
+  
 }
